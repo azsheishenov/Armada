@@ -1,6 +1,9 @@
+section {
+    padding: 62px 0;
+}
+
 .main-banner {
-    background-image: url('./images/main-banner.png');
-    aspect-ratio: 1440/768;
+    background-image: url('../images/main-banner.png');
     padding: 190px 0;
 }
 
@@ -42,4 +45,62 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+}
+
+.services__title {
+    position: relative;
+}
+
+.services__title h2 {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 8px;
+    background-color: white;
+}
+
+.services__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 62px 0;
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+    height: 100%;
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.2);
+    padding: 48px 24px 32px 24px;
+}
+
+.services__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services__card-text h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.services__card-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #5E5E5E;
+}
+
+.services__card-text h4, 
+.services__card-text p {
+    text-align: center;
+}
+
+.services__card-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
